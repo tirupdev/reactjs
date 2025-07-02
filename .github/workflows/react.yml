@@ -21,4 +21,5 @@ jobs:
       - name: Copy Build to NGINX
         run: |
           sudo rm -rf /usr/share/nginx/html/*
-          sudo cp -r build/* /usr/share/nginx/html/
+          sudo cp -r ${{ github.workspace }}/build/* /usr/share/nginx/html/
+
